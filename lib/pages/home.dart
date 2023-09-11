@@ -23,14 +23,30 @@ class HomePage extends StatelessWidget {
                   filled: true,
                   fillColor: Colors.white,
                   contentPadding: EdgeInsets.all(15),
+                  hintText: 'Search Habit',
+                  hintStyle: TextStyle(color: Color(0xffDDDADA), fontSize: 14),
                   prefixIcon: Padding(
                     padding: const EdgeInsets.all(12),
                     child: SvgPicture.asset('assets/icon/Search.svg'),
                   ),
-                  suffixIcon: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: SvgPicture.asset('assets/icon/Filter.svg'),
-                  ),
+                  suffixIcon: Container(
+                      width: 100,
+                      child: IntrinsicHeight(
+                          child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          VerticalDivider(
+                            color: Colors.black,
+                            indent: 10,
+                            endIndent: 10,
+                            thickness: 0.1,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(12),
+                            child: SvgPicture.asset('assets/icon/Filter.svg'),
+                          )
+                        ],
+                      ))),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
                       borderSide: BorderSide.none)),
