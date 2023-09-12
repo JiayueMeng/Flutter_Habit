@@ -201,7 +201,7 @@ class _HomePageState extends State<HomePage> {
                                 ? const Color(0xff9DCEFF)
                                 : Colors.transparent,
                             diets[index].viewIsSelected
-                                ? const Color(0xff92A3FD)
+                                ? const Color.fromARGB(255, 189, 213, 242)
                                 : Colors.transparent
                           ]),
                           borderRadius: BorderRadius.circular(50)),
