@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mas_programming1/models/category_model.dart';
 import 'package:mas_programming1/models/diet_model.dart';
 import 'package:mas_programming1/models/popular_model.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -12,6 +13,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final DatabaseReference _database = FirebaseDatabase.instance.reference();
+  int tapCount = 0; // Add a variable to track tap count
+
   List<CategoryModel> categories = [];
   List<DietModel> diets = [];
   List<PopularDietsModel> popularDiets = [];
@@ -28,6 +32,7 @@ class _HomePageState extends State<HomePage> {
     categories = CategoryModel.getCategories();
     diets = DietModel.getDiets();
     popularDiets = PopularDietsModel.getPopularDiets();
+    //_databaseReference = FirebaseDatabase.instance.ref();
   }
 
   @override
@@ -360,7 +365,21 @@ class _HomePageState extends State<HomePage> {
       ),
       actions: [
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            print("Continer is clicked");
+            print(tapCount);
+            // Increment tap count and store it in Firebase when the button is tapped.
+            setState(() {
+              tapCount++;
+            });
+            _database.child('tap_count').set(tapCount);
+
+            // Store tap count in Firebase Realtime Database
+
+            //_databaseReference.child('tap_count').set(tapCount);
+
+            // Rest of the existing code
+          },
           child: Container(
             margin: const EdgeInsets.all(10),
             alignment: Alignment.center,
