@@ -16,3 +16,4 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 https://www.youtube.com/watch?v=D4nhaszNW4o
+https://stackoverflow.com/questions/29901935/android-firebase-setvalue-permission-denied
