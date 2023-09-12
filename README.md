@@ -1,19 +1,20 @@
 # mas_programming1
 
-A new Flutter project.
+This is the demo of a Habit Tracking App.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter and Firebase Tutorials
+https://www.youtube.com/watch?v=D4nhaszNW4o  
+https://www.youtube.com/watch?v=ok6se5sOthw  
+https://github.com/mahdinazmi/Flutter-Basics/tree/main  
+https://www.codethebest.com/flutter/flutter-gesturedetector-widget-example/  
+https://www.educative.io/answers/how-to-use-flutter-to-read-and-write-data-to-firebase  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Debugging Tutorials  
+https://stackoverflow.com/questions/29901935/android-firebase-setvalue-permission-denied  
 
-https://www.youtube.com/watch?v=D4nhaszNW4o
-https://stackoverflow.com/questions/29901935/android-firebase-setvalue-permission-denied
+Deployment Tutorial  
+https://www.youtube.com/watch?v=E-jIEKWRpns  
