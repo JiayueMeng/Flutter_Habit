@@ -4,8 +4,8 @@ Jiayue Meng
 This is the demo of a Habit Tracking App.   
 This App is developed using Flutter, Android Studio, Firebase, and GitHub.
 
-## Getting Started
-
+## Description
+This is the home page of the App. This is an App that aims to help people build good habits.
 ![habit_android_screenshot](https://github.com/JiayueMeng/Flutter_Habit/assets/90874903/39ec26ec-07dc-4b28-bac4-780cf26277da)
 
 ## References   
