@@ -4,6 +4,7 @@ This is the demo of a Habit Tracking App.
 
 ## Getting Started
 
+![habit_android_screenshot](https://github.com/JiayueMeng/Flutter_Habit/assets/90874903/39ec26ec-07dc-4b28-bac4-780cf26277da)
 
 
 Flutter and Firebase Tutorials
