@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "479308506065",
+    "project_id": "masprogramming1",
+    "storage_bucket": "masprogramming1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479308506065:android:1efd053d3273526e3836f0",
+        "android_client_info": {
+          "package_name": "com.example.mas_programming1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMPzTWIOTFPk0vtUijRh_szxAkgceH6Yg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
