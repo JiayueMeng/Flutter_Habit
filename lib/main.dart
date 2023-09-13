@@ -10,7 +10,7 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const WidgetTree());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
