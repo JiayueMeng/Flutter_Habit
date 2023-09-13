@@ -4,9 +4,32 @@ import 'package:mas_programming1/models/category_model.dart';
 import 'package:mas_programming1/models/diet_model.dart';
 import 'package:mas_programming1/models/popular_model.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import '../auth.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
+
+  final User? user = Auth().currentUser;
+
+  Future<void> signOut() async {
+    await Auth().signOut();
+  }
+
+  Widget _title() {
+    return const Text('Firebase Auth');
+  }
+
+  Widget _userUid() {
+    return Text(user?.email ?? 'User Email');
+  }
+
+  Widget _signOutButton() {
+    return ElevatedButton(
+      onPressed: signOut,
+      child: const Text('Sign Out'),
+    );
+  }
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -361,7 +384,9 @@ class _HomePageState extends State<HomePage> {
       elevation: 0.0,
       centerTitle: true,
       leading: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          widget.signOut();
+        },
         child: Container(
           margin: const EdgeInsets.all(10),
           alignment: Alignment.center,
