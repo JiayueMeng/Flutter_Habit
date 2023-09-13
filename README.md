@@ -30,9 +30,22 @@ This is the home page of the App.
 
 ![habit_android_screenshot](https://github.com/JiayueMeng/Flutter_Habit/assets/90874903/39ec26ec-07dc-4b28-bac4-780cf26277da)
 
-## References   
+## Debugging and References   
 
-Flutter and Firebase Tutorials  
+### Problem Solving
+Emulator Compatibility:  
+Initially, my app couldn't run on the Android emulator. After a thorough debugging process, I realized that this issue might have been due to a lack of storage on my computer. To resolve this, I switched to another computer with sufficient storage capacity, which enabled me to continue development smoothly.  
+
+Emulator Display Issue:   
+I encountered a perplexing problem where both Android Studio and Flutter appeared to work correctly, but the app wouldn't display in the emulator. After careful inspection, I discovered that special characters in the project folder's name were causing this issue. Moving the project to another folder without special characters resolved the problem, allowing the app to display correctly in the emulator.  
+
+Firebase Database Connection:  
+The most challenging issue I faced was connecting the app to the Firebase database and storing user inputs. Initially, I struggled with understanding how to integrate Firebase into our Flutter project and write the user inputs or actions to the database. This led to difficulties in implementing the feature of tap recording and searching. To address this, I conducted extensive online research, watched tutorials, and consulted Firebase documentation. This learning process enabled me to successfully write the part of the code to integrate Firebase into my app, store user inputs, and resolve this issue effectively.  
+
+Firebase Database Permission Denied:   
+I encountered and successfully resolved an issue related to Firebase Realtime Database permissions. Initially, when attempting to write user inputs to the database, I faced a "Permission Denied" error. This challenge required me to understand Firebase's security rules and permissions structure better. After carefully configuring the Firebase security rules and ensuring that the app had the necessary permissions, I overcame this obstacle. 
+
+### Flutter and Firebase Tutorials  
 Set up Flutter and Android Studio: https://www.youtube.com/watch?v=VFDbZk2xhO4  
 Built this Habit Tracking App based on the tutorial and code in this video: https://www.youtube.com/watch?v=D4nhaszNW4o  
 This is the GitHub repository of the tutorial above: https://github.com/mahdinazmi/Flutter-Basics/tree/main   
@@ -41,11 +54,11 @@ Created a Firebase real-time database and connected it to my App using this tuto
 Learned how to store user inputs to my Firebase real-time database: https://www.educative.io/answers/how-to-use-flutter-to-read-and-write-data-to-firebase    
 Learned how to make buttons in my App clickable using this tutorial: https://www.codethebest.com/flutter/flutter-gesturedetector-widget-example/  
 
-Debugging Tutorials  
+### Debugging Tutorials  
 Solved the connection issue between Flutter and the Android emulator: https://stackoverflow.com/questions/61476059/no-devices-in-vs-code-flutter  
 Solved the issue that user inputs could not be written into my Firebase real-time database: https://stackoverflow.com/questions/29901935/android-firebase-setvalue-permission-denied  
 
-Deployment Tutorial  
+### Deployment Tutorial  
 Deployed my Flutter App to https://www.youtube.com/watch?v=E-jIEKWRpns   
 
 ## Repository and Firebase Database Access  
