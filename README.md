@@ -56,7 +56,7 @@ Firebase Realtime Database URL: https://masprogramming1-default-rtdb.firebaseio.
 
 ## Instructions  
 
-# Running on an Android Emulator
+### Running on an Android Emulator
 
 1. Clone or download the code for your Flutter project from GitHub.  
 2. Ensure you have Flutter and Dart installed on your development machine. Follow the official Flutter installation guide if you haven't already.  
@@ -66,7 +66,7 @@ Firebase Realtime Database URL: https://masprogramming1-default-rtdb.firebaseio.
 6. Make sure the emulator is running, then run the following command to verify connected devices: `flutter devices`. The emulator should appear in the list.  
 7. Execute `flutter run` in the terminal. Flutter will build and deploy the app to the Android emulator. You should see your app running on the emulator shortly.  
 
-# Running on a Physical Android Phone  
+### Running on a Physical Android Phone  
 
 1. Clone or download the code for your Flutter project from GitHub.  
 2. Ensure you have Flutter and Dart installed on your development machine. Follow the official Flutter installation guide if you haven't already.  
@@ -76,4 +76,12 @@ Firebase Realtime Database URL: https://masprogramming1-default-rtdb.firebaseio.
 6. Use your preferred code editor (e.g., Visual Studio Code) to open the Flutter project.  
 7. Open a terminal within your project's directory and run `flutter pub get` to install project dependencies.   
 8. Run `flutter devices` in the terminal to ensure that your connected Android device is listed.  
-9. Execute `flutter run` in the terminal. Flutter will build and deploy the app to your connected Android device. You should see your app running on your physical phone shortly.  
+9. Execute `flutter run` in the terminal. Flutter will build and deploy the app to your connected Android device. You should see your app running on your physical phone shortly.
+
+### Revision Control History:  
+
+Commit History: https://github.com/JiayueMeng/Flutter_Habit/commits/main  
+
+During the development of our Flutter project, my partner and I utilized Git for version control to effectively manage our codebase and collaborate on the project. Our Git history and coordination process involved a series of commits, pull requests, code reviews, and deployments.   
+We began by discussing the project's requirements and functionality. We decided on the responsibilities of reviewing, deploying, and modifying decorations for each other's project. I initiated the project by creating a Git repository on GitHub and pushed the initial codebase.
+My partner cloned the repository to his local machine to start contributing. Regular communication via messaging apps ensured that we stayed informed about each other's progress and discussed any issues we met during development. We followed a commit message convention to make our Git history more descriptive and informative. Each commit included a concise message explaining the changes made. Regular commits helped us track our progress and made it easier to identify and resolve conflicts. Before merging code into the main branch, we conducted thorough code reviews. This involved evaluating each other's code for correctness, code quality, and adherence to project standards. My partner was responsible for testing the app on his computer and devices to ensure it ran smoothly. My partner contributed to the project by making small changes to the interface. Throughout the collaboration, we learned valuable lessons about effective communication, coordination, and the importance of clear and concise commit messages. We also recognized the benefits of code reviews in maintaining code quality. In retrospect, we identified areas where we could improve our collaboration. Better project management tools and documentation could have enhanced our workflow. Next time, we plan to utilize project boards or issue trackers to manage tasks more efficiently and maintain better documentation of project requirements. I also plan to make good use of branches for the following projects when we need more collaborations. 
