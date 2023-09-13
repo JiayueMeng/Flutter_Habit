@@ -1,6 +1,6 @@
 # MAS Programming Assignment 1
 
-Jiayue Meng
+Jiayue Meng  
 This is the demo of a Habit Tracking App.   
 This app is developed using Flutter, Android Studio, Firebase, and GitHub.  
 
