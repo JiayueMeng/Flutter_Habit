@@ -10,7 +10,7 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const MyApp());
+  runApp(const WidgetTree());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,6 +22,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(fontFamily: 'Poppins'),
-        home: const WidgetTree()); //HomePage()
+        home: const WidgetTree());
   }
 }
