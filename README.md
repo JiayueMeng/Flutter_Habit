@@ -9,6 +9,9 @@ This is a multifunctional habit-building app that brings a touch of creativity t
 
 Here's a breakdown of the app's key features and components:   
 
+### Authentification  
+Users will first go to the login page when open the app, they need to register or log in using their email and password. If he is a new user, he needs to register first, and his account information will be stored in the Firebase database. The email address must be correctly formatted (i.e. xxx@yy.com) and the password must be at least 6 characters. Then, he can log in to the home page using the email and password he sets. When he wants to log out, he can tap the "arrow" icon ("<") in the upper-left corner of the home page.
+
 ### Search for Habits:   
 At the heart of the app is a powerful search functionality. Users can type in the habits they want to develop in the search bar at the top of the interface. This user input is seamlessly stored in the Firebase Realtime Database, providing users with a convenient way to search for their goals.   
 
@@ -26,7 +29,11 @@ I chose this project because it encompasses different functions such as user inp
 
 I embarked on this project with the intention of learning and gaining hands-on experience in software development. I wanted to understand the entire app development lifecycle, from creating user interfaces using Dart and Flutter to connecting the app to web services like Firebase. I also learned how to deploy the Flutter app to Android phones. Additionally, I aimed to enhance my familiarity with GitHub for version control and collaboration. In essence, this app is a blend of functionality, aesthetics, and playfulness. It encourages users to embark on their habit-building journey while gaining valuable insights into the world of app development. Through this project, I've not only honed my technical skills but also crafted an application that's both practical and enjoyable to use. It's been a fantastic learning experience, and I look forward to further refining and expanding this app in the future.   
 
-This is the home page of the App.     
+This is the login/register page of the app:    
+
+![login_page](https://github.com/JiayueMeng/Flutter_Habit/assets/90874903/2b9aeeef-2866-4a93-9435-bc00f8d3d08b)
+
+This is the home page of the app:      
 
 ![habit_android_screenshot](https://github.com/JiayueMeng/Flutter_Habit/assets/90874903/39ec26ec-07dc-4b28-bac4-780cf26277da)
 
@@ -52,7 +59,8 @@ This is the GitHub repository of the tutorial above: https://github.com/mahdinaz
 Set up Firebase CLI: https://www.youtube.com/watch?v=gptBM2CPMQs  
 Created a Firebase real-time database and connected it to my App using this tutorial: https://www.youtube.com/watch?v=ok6se5sOthw   
 Learned how to store user inputs to my Firebase real-time database: https://www.educative.io/answers/how-to-use-flutter-to-read-and-write-data-to-firebase    
-Learned how to make buttons in my App clickable using this tutorial: https://www.codethebest.com/flutter/flutter-gesturedetector-widget-example/  
+Learned how to make buttons in my App clickable using this tutorial: https://www.codethebest.com/flutter/flutter-gesturedetector-widget-example/   
+Added authentication to the app: https://www.youtube.com/watch?v=rWamixHIKmQ
 
 ### Debugging Tutorials  
 Solved the connection issue between Flutter and the Android emulator: https://stackoverflow.com/questions/61476059/no-devices-in-vs-code-flutter  
@@ -66,6 +74,7 @@ Deployed my Flutter App to https://www.youtube.com/watch?v=E-jIEKWRpns
 URL to the GitHub repository: https://github.com/JiayueMeng/Flutter_Habit.git  
 Firebase Realtime Database API key: AIzaSyCMPzTWIOTFPk0vtUijRh_szxAkgceH6Yg  
 Firebase Realtime Database URL: https://masprogramming1-default-rtdb.firebaseio.com/  
+Firebase Authentication: People can only access it by invitation. I can provide access to TAs if needed. 
 
 ## Instructions  
 
