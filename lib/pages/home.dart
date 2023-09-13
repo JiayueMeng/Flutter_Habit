@@ -13,8 +13,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final DatabaseReference _database = FirebaseDatabase.instance.reference();
+  final DatabaseReference _database =
+      FirebaseDatabase.instance.reference().child('user_data');
   int tapCount = 0; // Add a variable to track tap count
+  String userInput = '';
 
   List<CategoryModel> categories = [];
   List<DietModel> diets = [];
@@ -201,7 +203,7 @@ class _HomePageState extends State<HomePage> {
                                 ? const Color(0xff9DCEFF)
                                 : Colors.transparent,
                             diets[index].viewIsSelected
-                                ? const Color(0xff92A3FD)
+                                ? Color.fromARGB(255, 229, 189, 242)
                                 : Colors.transparent
                           ]),
                           borderRadius: BorderRadius.circular(50)),
@@ -210,8 +212,8 @@ class _HomePageState extends State<HomePage> {
                           'View',
                           style: TextStyle(
                               color: diets[index].viewIsSelected
-                                  ? Colors.white
-                                  : const Color(0xffc58BF2),
+                                  ? Color.fromARGB(255, 250, 250, 250)
+                                  : Color.fromARGB(255, 221, 184, 250),
                               fontWeight: FontWeight.w600,
                               fontSize: 14),
                         ),
@@ -304,6 +306,15 @@ class _HomePageState extends State<HomePage> {
             spreadRadius: 0.0)
       ]),
       child: TextField(
+        onChanged: (value) {
+          setState(() {
+            userInput = value;
+          });
+          _database.set({
+            'tapCount': tapCount,
+            'userInput': userInput,
+          });
+        },
         decoration: InputDecoration(
             filled: true,
             fillColor: Colors.white,
@@ -372,13 +383,13 @@ class _HomePageState extends State<HomePage> {
             setState(() {
               tapCount++;
             });
-            _database.child('tap_count').set(tapCount);
+            //_database.child('tap_count').set(tapCount);
 
-            // Store tap count in Firebase Realtime Database
-
-            //_databaseReference.child('tap_count').set(tapCount);
-
-            // Rest of the existing code
+            // Store the updated tapCount and userInput in Firebase
+            _database.set({
+              'tapCount': tapCount,
+              'userInput': userInput,
+            });
           },
           child: Container(
             margin: const EdgeInsets.all(10),
