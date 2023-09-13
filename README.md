@@ -9,6 +9,9 @@ This is a multifunctional habit-building app that brings a touch of creativity t
 
 Here's a breakdown of the app's key features and components:   
 
+### Authentification  
+Users will first go to the login page when open the app, they need to register or log in using their email and password. If he is a new user, he needs to register first, and his account information will be stored in the Firebase database. The email address must be correctly formatted (i.e. xxx@yy.com) and the password must be at least 6 characters. Then, he can log in to the home page using the email and password he sets. When he wants to log out, he can tap the "arrow" icon ("<") in the upper-left corner of the home page.
+
 ### Search for Habits:   
 At the heart of the app is a powerful search functionality. Users can type in the habits they want to develop in the search bar at the top of the interface. This user input is seamlessly stored in the Firebase Realtime Database, providing users with a convenient way to search for their goals.   
 
