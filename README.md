@@ -46,4 +46,34 @@ Solved the connection issue between Flutter and the Android emulator: https://st
 Solved the issue that user inputs could not be written into my Firebase real-time database: https://stackoverflow.com/questions/29901935/android-firebase-setvalue-permission-denied  
 
 Deployment Tutorial  
-Deployed my Flutter App to https://www.youtube.com/watch?v=E-jIEKWRpns  
+Deployed my Flutter App to https://www.youtube.com/watch?v=E-jIEKWRpns   
+
+## Repository and Firebase Database Access  
+
+URL to the GitHub repository: https://github.com/JiayueMeng/Flutter_Habit.git  
+Firebase Realtime Database API key: AIzaSyCMPzTWIOTFPk0vtUijRh_szxAkgceH6Yg  
+Firebase Realtime Database URL: https://masprogramming1-default-rtdb.firebaseio.com/  
+
+## Instructions  
+
+# Running on an Android Emulator
+
+1. Clone or download the code for your Flutter project from GitHub.  
+2. Ensure you have Flutter and Dart installed on your development machine. Follow the official Flutter installation guide if you haven't already.  
+3. Open Android Studio to create and configure an Android emulator if you haven't already. Ensure that the emulator is up and running.  
+4. Use your preferred code editor (e.g., Visual Studio Code) to open the Flutter project.   
+5. Open a terminal within your project's directory and run `flutter pub get` to install project dependencies.   
+6. Make sure the emulator is running, then run the following command to verify connected devices: `flutter devices`. The emulator should appear in the list.  
+7. Execute `flutter run` in the terminal. Flutter will build and deploy the app to the Android emulator. You should see your app running on the emulator shortly.  
+
+# Running on a Physical Android Phone  
+
+1. Clone or download the code for your Flutter project from GitHub.  
+2. Ensure you have Flutter and Dart installed on your development machine. Follow the official Flutter installation guide if you haven't already.  
+3. On your Android phone, go to Settings > About Phone and tap on the Build Number several times (usually 7) until you see a message indicating that Developer Options are enabled.  
+4. In the Developer Options section (usually located in Settings > System > Developer Options), enable USB debugging.  
+5. Connect your Android phone to your computer via a USB cable. You may need to authorize the computer for USB debugging on your phone.  
+6. Use your preferred code editor (e.g., Visual Studio Code) to open the Flutter project.  
+7. Open a terminal within your project's directory and run `flutter pub get` to install project dependencies.   
+8. Run `flutter devices` in the terminal to ensure that your connected Android device is listed.  
+9. Execute `flutter run` in the terminal. Flutter will build and deploy the app to your connected Android device. You should see your app running on your physical phone shortly.  
