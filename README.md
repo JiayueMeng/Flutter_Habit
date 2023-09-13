@@ -1,4 +1,4 @@
-# MAS Programming Assignment 1
+# Habit-building App
 
 Jiayue Meng    
 This is the demo of a Habit Tracking App.   
